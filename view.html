@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Simulation Input</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<select id="option">
+		<option value="block">Blocks</option>
+		<option value="word">Words</option>
+	</select>
+	<br>
+	<label>Block Size</label>
+	<input type="text" id="blocksize"></input>
+	<br>
+	<label>Set Size</label>
+	<input type="text" id="setsize"></input>
+	<br>
+	<label>Main Memory Size</label>
+	<input type="text" id="memsize"></input>
+	<br>
+	<label>Cache Memory Size</label>	
+	<input type="text" id="cmemsize"></input>
+	<br>
+	<label>Cache Cycle Time (in ns)</label>
+	<input type="text" id="ccycle"></input>
+	<br>
+	<label>Memory Cycle Time (in ns)</label>
+	<input type="text" id="mcycle"></input>
+	<br>
+	<label>Program Flow</label>
+	<input type="text" id="flow"></input>
+	<br>
+	
+	<input type="button" id="submit" value="Submit" onclick="submit()"></input>
+	<br><br>
+	
+	<label>Cache Hits</label>
+	<input type="text" id="hits" readonly></input>
+	<br>
+	<label>Cache Misses</label>
+	<input type="text" id="misses" readonly></input>
+	<br>
+	<label>Miss Penalty</label>
+	<input type="text" id="penalty" readonly></input>
+	<br>
+	<label>Average Memory Access Time</label>
+	<input type="text" id="average" readonly></input>
+	<br>
+	<label>Total Memory Access Time</label>
+	<input type="text" id="total" readonly></input>
+
+	<br>
+
+	<table id="snapshotTable" border="1">
+		<thead>
+			<tr>
+				<th>Set</th>
+				<th>Block</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody id="snapshotBody">
+			<!-- Table rows will be dynamically added here -->
+		</tbody>
+	</table>
+
+	<button id="getOutput">getOutput</button>
+
+</body>
+
+</html>
