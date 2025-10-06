@@ -19,11 +19,11 @@
         "cells": [
           {
             "position": {
-              "x": 450,
-              "y": 20
+              "x": 505,
+              "y": 30
             },
             "size": {
-              "width": 260,
+              "width": 150,
               "height": 140
             },
             "attrs": {
@@ -549,6 +549,120 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verified",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Verified"
+            ],
+            "id": "ae8f981b-c05e-410e-9700-bca4aa02fb1d",
+            "source": {
+              "cell": "96cd4ada-931d-42ea-9d31-a60f6611ba6c",
+              "port": "c0a097a8-0eb9-430c-a1b1-33128b1cd7c0"
+            },
+            "target": {
+              "cell": "50151ce7-f775-4888-ba01-4df24dfcc699",
+              "port": "8fcc1466-27cd-48a2-a69e-8c22b2446550"
+            },
+            "vertices": [
+              {
+                "x": 780,
+                "y": 150
+              },
+              {
+                "x": 700,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verifies the Privilege",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Verifies the Privilege"
+            ],
+            "id": "a6ad6eb2-0938-4575-8fa3-b8a2290cf063",
+            "source": {
+              "cell": "50151ce7-f775-4888-ba01-4df24dfcc699",
+              "port": "8fcc1466-27cd-48a2-a69e-8c22b2446550"
+            },
+            "target": {
+              "cell": "96cd4ada-931d-42ea-9d31-a60f6611ba6c",
+              "port": "c0a097a8-0eb9-430c-a1b1-33128b1cd7c0"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 50
+              },
+              {
+                "x": 790,
+                "y": 50
+              },
+              {
+                "x": 825,
+                "y": 70
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -697,13 +811,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
